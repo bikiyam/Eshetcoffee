@@ -1,0 +1,1669 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /*font-family: "Onest", sans-serif !important;
+  font-family: "Merriweather", serif;*/
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h2 * {
+  font-family: "Onest", sans-serif !important;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*==================================== HOME PAGE ======================================*/
+/* ---------------------------- Navigation Part ----------------------------------*/
+@keyframes fadedown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    filter: blur(0px);
+  }
+}
+nav {
+  display: flex;
+  padding: 30px 100px;
+  justify-content: space-between;
+}
+
+.head {
+  position: fixed;
+  color: white;
+  background-color: rgba(26, 26, 26, 0.23);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 50;
+  width: 100%;
+  animation: fadedown 3s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.headprof {
+  height: 30px;
+}
+
+.head h1 {
+  font-family: "Onest", sans-serif !important;
+  font-size: 17px;
+  margin-top: 5px;
+  font-weight: 600;
+  width: 600px;
+  text-align: left;
+}
+
+.head img {
+  padding-right: 15px;
+  width: 30px;
+  aspect-ratio: 1;
+  float: left;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*
+.logo {
+  margin: 13px 10px 0px -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  float: left;
+  transition: 0s;
+}*/
+.head a {
+  font-family: "Onest", sans-serif !important;
+  list-style: none;
+  margin-right: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+}
+
+.head a:hover {
+  font-weight: 900;
+  box-sizing: border-box;
+  border-bottom: solid 1px #8d8585;
+  scale: 1.2;
+  transition: 0.3s ease-in-out;
+}
+
+.menuicon {
+  display: none;
+}
+
+/* ----------------------------------- Enhancements Parts ---------------*/
+.circlee {
+  position: absolute;
+  top: 1090px;
+  left: 155px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 150px;
+  z-index: -20;
+  filter: blur(50px);
+}
+
+.scrollicon {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  top: 475px;
+  left: 1435px;
+  color: white;
+  height: 420px;
+  z-index: 20;
+  animation: fadedown 6s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.scrollicon h3 {
+  transform: rotate(270deg);
+}
+
+.scrollicon svg {
+  width: 80px;
+  height: 80px;
+}
+
+.scrollicon1 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  top: 475px;
+  left: 1435px;
+  color: white;
+  height: 420px;
+  z-index: 20;
+  animation: fadedown 6s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.scrollicon1 h3 {
+  margin-left: 10px;
+  transform: rotate(270deg);
+}
+
+.scrollicon1 svg {
+  width: 80px;
+  height: 80px;
+}
+
+/*
+.scrollicon1 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  top: 475px;
+  left: 1435px;
+  color: white;
+  height: 420px;
+  z-index: 20;
+  animation: fadedown 6s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.scrollicon1 h4 {
+  font-weight: 600;
+  transform: rotate(270deg);
+  margin-left: -60px;
+  margin-bottom: 0px;
+}
+
+.scrollicon1 svg {
+  margin-top: 80px;
+  width: 80px;
+  height: 80px;
+  margin-right: auto !important;
+  padding-right: auto !important;
+}
+
+*/
+/*------------------------------------------------ Header Part ---------------------------------------------*/
+@keyframes fadeleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+    filter: blur(0px);
+  }
+}
+@keyframes faderight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+    filter: blur(10px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+.header {
+  display: flex;
+  padding: 150px 50px;
+  background: linear-gradient(213deg, rgb(0, 0, 0) 5%, rgb(24, 24, 24) 150%);
+  color: white;
+  justify-content: start;
+  align-items: center;
+  gap: 100px;
+}
+
+.headercontainer {
+  width: 53%;
+  padding-left: 40px;
+  margin-left: 0px;
+  padding-bottom: 50px;
+}
+
+.headerimgcontainer {
+  width: 31%;
+}
+
+.headerimgcontainer img {
+  border-radius: 50px;
+  border-top-left-radius: 50px;
+  width: 100%;
+  aspect-ratio: 3/3.5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: faderight 2.5s forwards cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.header h1 {
+  font-family: "Onest", sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 80px;
+  padding: 13px 0px;
+  animation: fadeleft 3.5s forwards cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.header h3 {
+  font-weight: 200;
+  font-size: 17px;
+  font-family: "Onest", sans-serif !important;
+  animation: fadeleft 2s forwards cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.explore {
+  font-weight: 600;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: white;
+  margin-top: 0px;
+  padding: 6px 20px;
+  color: #08090A;
+  text-decoration: none;
+  margin-right: 5px;
+  animation: fadeleft 4s forwards cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.explore:hover {
+  box-shadow: 0 0 5px 0 rgb(206, 206, 206);
+  transition: 0.3s ease-out;
+}
+
+.getinotuch {
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 0px;
+  padding: 8.5px 20px;
+  text-decoration: none;
+  animation: fadeleft 4s forwards cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.getinotuch:hover {
+  background: rgba(255, 255, 255, 0.1176470588);
+  transition: 0.8s;
+}
+
+.slider {
+  display: flex;
+}
+
+/*------------------------------------------------ About us Part ---------------------------------------------*/
+.about {
+  /*background: rgba(255, 255, 255, 0.46);*/
+  background: rgb(196, 69, 0);
+  background: linear-gradient(119deg, rgb(196, 69, 0) 0%, rgba(255, 255, 255, 0.0755952039) 0%, rgba(0, 69, 255, 0.1176120106) 100%);
+  display: flex;
+  padding: 130px 100px;
+  text-align: end;
+  gap: 50px;
+  justify-content: end;
+}
+
+.about img {
+  padding: 50px 0px;
+  width: 28%;
+  height: 100%;
+  margin-top: 6%;
+}
+
+.about h1 {
+  font-family: "Onest", sans-serif !important;
+  padding-bottom: 15px;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.aboutcontainer {
+  padding-top: 80px;
+  width: 65%;
+}
+
+.aboutcontainer h3 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.about a {
+  font-family: "Onest", sans-serif !important;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 0px;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.about a:hover {
+  /*  background: transparent;
+  color: black;*/
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+  transition: 0.3s ease-in-out;
+}
+
+/*------------------------------------------------ Products Part ---------------------------------------------*/
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5) translate(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0px);
+  }
+}
+.products {
+  background-color: black;
+  padding: 100px;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  animation: fadeleft 1s forwards ease-in-out;
+  background: linear-gradient(33deg, rgb(0, 0, 0) 5%, rgb(48, 48, 48) 100%);
+}
+
+.prodcontainer {
+  padding-left: 40px;
+}
+
+.prodcontainer h3 {
+  font-weight: 200;
+}
+
+.products h1 {
+  font-family: "Onest", sans-serif !important;
+  padding-bottom: 5px;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.prodraw {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.prodcol {
+  padding: 23px;
+  display: block;
+  box-sizing: border-box;
+  width: 20%;
+  margin: 50px 25px;
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+  border-radius: 10px;
+  transition: 1s;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+}
+
+.prodcol:hover {
+  scale: 1.08;
+  transition: 1.1s;
+}
+
+.prodcol img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.prodcol h2 {
+  font-family: "Onest", sans-serif !important;
+  padding: 10px 0px;
+  font-weight: 500;
+}
+
+.prodcol h4 {
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.prodbutt {
+  display: flex;
+  padding-left: 41%;
+}
+
+.products a {
+  font-family: "Onest", sans-serif !important;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px 20px;
+  color: #08090A;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.products a:hover {
+  scale: 1.03;
+  box-shadow: 0px 0px 6px rgb(255, 255, 255);
+  transition: 0.4s ease-in-out;
+}
+
+/*------------------------------------------------ CEO's Part ---------------------------------------------*/
+.ceo {
+  padding: 120px 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background: rgb(196, 69, 0);
+  background: linear-gradient(119deg, rgb(196, 69, 0) 0%, rgba(255, 255, 255, 0.0755952039) 0%, rgba(0, 69, 255, 0.1176120106) 100%);
+}
+
+.ceo h1 {
+  font-family: "Onest", sans-serif !important;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ceocont {
+  display: flex;
+}
+
+.ceoimgcont {
+  width: 30%;
+}
+
+.ceoimgcont img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 5px 10px 30px #000;
+}
+
+.ceotext {
+  padding: 50px;
+  width: 70%;
+  display: block;
+  text-align: center;
+  animation-timeline: view() !important;
+  animation-range: entry 0 cover 5%;
+  animation: fadedown 3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.ceotext h2 {
+  font-family: "Onest", sans-serif !important;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.ceotext h4 {
+  font-weight: 400;
+}
+
+/*------------------------------------------------ Testimonials Part ---------------------------------------------*/
+.testimonials {
+  background-color: #08090A;
+  padding: 100px;
+  color: white;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  animation: fadeleft 1s forwards ease-in-out;
+  background: linear-gradient(33deg, rgb(0, 0, 0) 5%, rgb(48, 48, 48) 100%);
+}
+
+.testcontainer h1 {
+  font-size: 60px;
+  font-family: "Onest", sans-serif !important;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.testcontainer h3 {
+  font-weight: 200;
+}
+
+.testcontainer {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.test_row {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  animation-timeline: view() !important;
+  animation-range: entry 0 cover 20%;
+  animation: fadedown 3s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.test_col {
+  display: flex;
+  margin: 10px;
+  margin-right: 50px;
+  width: 42%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: -30px !important;
+}
+
+.testcomm p {
+  font-weight: 500;
+}
+
+.testprof {
+  width: 120px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testprof h4 {
+  font-family: "Onest", sans-serif !important;
+  font-size: 15px;
+  width: 135px;
+  text-align: center;
+}
+
+.testprof img {
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 50%;
+  margin: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testcomm {
+  margin-left: 35px;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  border-top-left-radius: 0px;
+  /*background: white;
+  color: black;*/
+  color: white;
+  background: transparent;
+  text-align: start;
+}
+
+/*=======================  Footer Section  ========================*/
+.footer {
+  position: relative;
+  display: flex;
+  border-top-left-radius: 160px;
+  color: white;
+  background: #000;
+  padding: 50px 8%;
+}
+
+.description {
+  width: 25%;
+}
+
+.companybrand {
+  display: flex;
+}
+
+.desclogo {
+  width: 15%;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.socialmedia {
+  display: inline-block;
+  width: 25%;
+}
+
+.socialmedia h2 {
+  margin-bottom: 15px;
+}
+
+.socialmedia img {
+  aspect-ratio: 1;
+  width: 20px;
+  height: 100%;
+}
+
+.footersm {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.creditss {
+  font-size: 16Px;
+  font-weight: normal;
+  width: 600px;
+}
+
+.footertext {
+  display: flex;
+  width: 100%;
+}
+
+.copyright {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  margin-right: auto;
+  display: flex;
+}
+
+.footertext h4 {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+/*------------- Tailwind footer section ------------*/
+.footercontainer {
+  font-family: "Onest", sans-serif !important;
+  padding: 48px 80px;
+  background: #000;
+  color: white;
+  border-top-left-radius: 130px;
+  overflow-y: none;
+  width: 100%;
+}
+
+.upperfooter {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.upperfooter h2 {
+  margin-bottom: 7px;
+}
+
+.footerbrand {
+  flex-direction: column;
+  font-size: 15px;
+  width: 60%;
+}
+
+.footerbrand img {
+  width: 96px;
+}
+
+.footercontainer h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.footercontainer h4 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.upperrightfooter {
+  display: flex;
+  gap: 56px;
+  flex-direction: row-reverse;
+}
+
+.footerloc {
+  flex-direction: column-reverse;
+  font-size: 15px;
+}
+
+.footerops {
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.socialmedias {
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.smlist {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.smeachlist {
+  display: flex;
+  gap: 8px;
+}
+
+.smeachlist svg {
+  padding-top: 4px;
+}
+
+.lowerfooter {
+  display: flex;
+  width: 100%;
+  padding-right: 160px;
+  padding-bottom: -20px;
+  place-items: end;
+}
+
+.lowerfooter h2 {
+  font-size: 15px;
+  font-weight: normal;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 320px;
+}
+
+.lowerfooter h4 {
+  font-weight: normal;
+  font: 13px;
+}
+
+.lowerfooter h3 {
+  font-size: 15px;
+  font-weight: normal;
+  text-align: left;
+  margin-right: auto;
+  display: flex;
+  gap: 4px;
+}
+
+/*========== Common for the pages ===========*/
+/*------- Header for the Pages ---------*/
+.pagesheader {
+  padding: 75px;
+  padding-bottom: 20px;
+  color: white;
+  position: relative;
+  background: black;
+}
+
+.pagesheader h1 {
+  font-family: "Onest", sans-serif !important;
+  font-size: 45px;
+  font-weight: 900;
+  padding-top: 10px;
+}
+
+.pagesheader h3 {
+  font-family: "Onest", sans-serif !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/*=========================== About Page =============================*/
+/*-------------  Introduction On About Page  -----------*/
+.backg img {
+  opacity: 100%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+}
+
+.introduccontainer {
+  display: flex;
+  gap: 100px;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 4%, rgba(0, 0, 0, 0.6694327389) 36%, rgb(0, 0, 0) 100%);
+  padding: 90px 120px;
+  color: white;
+  text-align: left;
+  align-items: center;
+}
+
+.introduccontainertext {
+  width: 55%;
+}
+
+.introduccontainer h2 {
+  font-family: "Onest", sans-serif !important;
+  font-size: 70px;
+  font-weight: 700;
+  margin-top: -10px;
+  margin-bottom: 17px;
+  animation: fadeleft 3.5s forwards cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.introduccontainer h3 {
+  font-family: "Onest", sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.introduccontainer h4 {
+  font-size: 17px;
+  font-weight: 400;
+  animation: fadeleft 2s forwards cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.introduccontainerimg {
+  width: 30%;
+}
+
+.introduccontainerimg img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  animation: faderight 2.5s forwards cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+/*
+.introduccontainer h3 {
+  font-size: 47px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+*/
+.introduccontainer2 {
+  background: rgb(0, 0, 0);
+  color: white;
+  text-align: left;
+  padding: 100px 200px;
+}
+
+.introduccontainer2 h3 {
+  font-family: "Onest", sans-serif;
+  font-size: 43px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.introduccontainer2 h4 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.introduccontainer3 {
+  background: black;
+  color: white;
+  text-align: left;
+  padding: 120px 200px;
+}
+
+.introduccontainer3 h3 {
+  font-family: "Onest", sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.introduccontainer3 h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.introduccontainer3img {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+  gap: 30px;
+}
+
+.introduccontainer3img img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.introducimg img {
+  width: 300px;
+  padding-left: 60px;
+  padding-top: 80px;
+  margin-bottom: 100px;
+}
+
+/*------------------  Mission Section on About Page  -----------------*/
+.missions {
+  background: transparent;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  color: black;
+}
+
+.missraw {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 150px;
+}
+
+.misscol {
+  justify-content: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 35%;
+  margin: 50px 25px;
+  animation-timeline: view() !important;
+  animation-range: entry 0 cover 10%;
+  animation: fadedown 5s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.misscol:hover {
+  scale: 1.05;
+  transition: 0.65s ease-out;
+}
+
+.misscol h2 {
+  font-family: "Onest", sans-serif !important;
+  padding: 10px 0px;
+  font-size: 27px;
+}
+
+.misscol h4 {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/*.aboutproductsh1 h1 {
+  font-size: 47px;
+  font-weight: 800;
+  text-align: center;
+}*/
+/*--------Products section on about page-------*/
+.aboutprod {
+  color: white;
+  background: rgb(0, 0, 0);
+  padding: 160px 200px;
+  text-align: end;
+}
+
+.aboutprod h2 {
+  font-family: "Onest", sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.aboutprod h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.aboutprod a {
+  font-family: "Onest", sans-serif;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px 20px;
+  color: #08090A;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.aboutprod a:hover {
+  scale: 1.03;
+  box-shadow: 0px 0px 6px rgb(255, 255, 255);
+  transition: 0.4s ease-in-out;
+}
+
+/* --------- Uniqueness Section on About Page ---------*/
+.uniqueness {
+  padding: 70px 180px;
+  margin: auto;
+  text-align: center;
+  background-size: cover;
+  background: transparent;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+.uniqueness h1 {
+  font-family: "Onest", sans-serif;
+  color: white;
+  font-size: 47px;
+  font-weight: 800;
+  text-shadow: 0px 0px 7px black;
+}
+
+.uniqueness p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.uniqcol {
+  color: white;
+  flex-basis: 31%;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 30px 20px 15px 20px;
+  box-sizing: border-box;
+  transition: 0.7s;
+  font-weight: 100 !important;
+}
+
+.uniqcol p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0px;
+}
+
+.uniqcol h3 {
+  font-family: "Onest", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.uniqcol:hover {
+  scale: 1.05;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.534) inset;
+}
+
+@media (max-width: 930px) {
+  .uniqueness {
+    padding: 50px 10% 70px 10%;
+  }
+  .uniqueness h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .row2 {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .uniqueness p {
+    font-size: 14px;
+  }
+}
+.showofff {
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  padding: 65px 100px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.showofffcase {
+  border: solid 3px white;
+  border-radius: 20px;
+  width: 100px;
+  padding: 10px;
+  animation-timeline: view() !important;
+  animation-range: entry 0 cover 20%;
+  animation: fadedown 3s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.showofffcase:hover {
+  transform: rotate(360deg) scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+
+.showofffcase h2 {
+  font-size: 35px;
+  font-family: "Onest", sans-serif;
+}
+
+/*=========================== Products Page =============================*/
+/*----------------------------- Products hero section------------------------------------------------*/
+.productshero {
+  display: flex;
+  gap: 100px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 4%, rgba(0, 0, 0, 0.6694327389) 36%, rgb(0, 0, 0) 100%);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  padding: 86px 120px;
+  color: white;
+  text-align: left;
+  align-items: center;
+}
+
+.productsherotext {
+  width: 55%;
+}
+
+.productshero h2 {
+  font-family: "Onest", sans-serif !important;
+  font-size: 70px;
+  font-weight: 700;
+  margin-top: -10px;
+  margin-bottom: 17px;
+}
+
+.productshero h3 {
+  font-family: "Onest", sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  animation: fadeleft 1.7s forwards cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.productshero h4 {
+  font-size: 17px;
+  font-weight: 400;
+  animation: fadeleft 2.5s forwards cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.productsheroimg {
+  width: 30%;
+}
+
+.productsheroimg img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  animation: fadeleft 5s forwards cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 3.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/*----------- Products List on Products Page --------*/
+.productslisted {
+  padding: 50px 100px;
+  color: white;
+}
+
+.productslisted h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: -30px;
+}
+
+.productslistedrow {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.productslistedcol {
+  width: 40%;
+  text-decoration: none;
+}
+
+.productslistedcol1 {
+  width: 20%;
+  text-decoration: none;
+}
+
+.productslistedlist {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/*------------------------Products Section-----------------------*/
+.prodlistsection {
+  background: linear-gradient(33deg, rgb(0, 0, 0) 5%, rgb(14, 14, 14) 100%);
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/*---------  Products EACH List ----------*/
+.blacklist {
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 70px 150px;
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+  list-style: none;
+  animation: fadeleft linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 10%;
+}
+
+.blacklist h2 {
+  font-family: "Onest", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.blacklistforms h4 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.blacklist li {
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.blacklistrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.blacklistcol {
+  width: 75%;
+}
+
+.blacklistcol h4 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.blacklistimgcol {
+  width: 35%;
+  padding: 20px;
+}
+
+.blacklist img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 3/4;
+  width: 100%;
+  border-radius: 43%;
+}
+
+.blacklistforms {
+  margin-left: 40px;
+}
+
+.whitelist {
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 70px 150px;
+  background: rgba(114, 114, 114, 0.148);
+  color: white;
+  list-style: none;
+  animation: fadeleft linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 10%;
+}
+
+.whitelist h2 {
+  font-family: "Onest", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: left;
+  margin: 0px 100px 20px 100px;
+  text-align: center;
+}
+
+.whitelistforms h4 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.whitelist li {
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.whitelistrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.whitelistcol {
+  width: 75%;
+}
+
+.whitelistcol h4 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.whitelistimgcol {
+  width: 35%;
+  padding: 20px;
+}
+
+.whitelist img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 3/4;
+  width: 100%;
+  border-radius: 43%;
+}
+
+.whitelistforms {
+  margin-left: 40px;
+}
+
+.productsending {
+  padding: 70px 200px;
+  padding-bottom: 40px;
+  color: white;
+  text-align: center;
+}
+
+.productsending h3 {
+  font-family: "Onest", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: black;
+  text-align: center;
+}
+
+.productsending a {
+  font-family: "Onest", sans-serif;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: black;
+  margin-left: 50px;
+  padding: 8px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*=========================== Contact Us Page =============================*/
+/*------------------- Contact Container ------------------*/
+.contact {
+  padding: 100px 20px;
+  align-items: center;
+  background: black;
+}
+
+.contacth2 {
+  text-align: center;
+  font-family: "Onest", sans-serif !important;
+  padding-top: 10px;
+  font-size: 50px;
+  color: white;
+}
+
+.contacth3 {
+  text-align: center;
+  font-family: "Onest", sans-serif !important;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.contactfullcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+/*===================  Contact Image ===================*/
+.contact-img-container {
+  padding: 50px;
+  width: 26%;
+  background: linear-gradient(213deg, rgb(50, 50, 50) 5%, rgb(79, 79, 79) 100%);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.contact-img-container img {
+  width: 100%;
+  border-radius: 20px;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*== Contact Form ==*/
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px 30px 0px;
+}
+.contact-form .mailandphone {
+  width: 100%;
+  display: flex;
+  gap: 35px;
+}
+.contact-form .mailandphone div {
+  width: 50%;
+}
+
+.contact-form h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.contact-form-container {
+  width: 45%;
+  padding: 0px 40px;
+  background: #0d0d0d;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.contact-form-container h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.contact-form-container input {
+  width: 100%;
+  height: 30px;
+  font-weight: 500;
+  background: transparent;
+  color: black;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  border: solid 1px rgba(255, 255, 255, 0.437);
+}
+
+.contact-form-container textarea {
+  width: 100%;
+  height: 100px;
+  font-weight: 500;
+  background: transparent;
+  color: black;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.submitbutt {
+  background: white;
+  color: black;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.submitbutt:hover {
+  scale: 1.03;
+  box-shadow: 0px 0px 10px rgba(11, 34, 186, 0.3137254902);
+  transition: 0.4s ease-in-out;
+}
+
+/*
+.askmail {
+  font-weight: 500;
+  width: 90%;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  border-bottom: solid 2px black;
+}
+*/
+/*
+.askphone {
+  width: 100%;
+  font-weight: 500;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  border-bottom: solid 2px black;
+}
+*/
+/*
+.asksubject {
+  font-weight: 500;
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  border-bottom: solid 2px black;
+}
+*/
+/*
+.askmessage {
+  font-weight: 500;
+  width: 100%;
+  height: 70px;
+  background: white;
+  color: black;
+  padding: 15px;
+  padding-bottom: 25px;
+  border-radius: 3px;
+  border: none;
+  border-bottom: solid 2px black;
+  margin-bottom: 20px;
+}
+*/
+.contacthome {
+  padding: 100px;
+}
+
+.contbutt {
+  background: black;
+  margin: 10px;
+  padding: 10px 10px;
+  font-weight: 600;
+  font-size: 15px;
+  width: 120px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.contacthome h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.contbutt a {
+  color: white;
+  text-decoration: none;
+}
+
+.contbutt a:hover {
+  color: #f6ff00;
+  transition: 1.4s;
+}
+
+/*SUmbit button from */
+/*       Reach Us Section       */
+.reachus {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.reach {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 50px;
+  color: black;
+}
+
+.reach h2 {
+  font-family: "Onest", sans-serif !important;
+  padding: 10px 0px;
+  font-size: 50px;
+  color: white;
+}
+
+.reach h3 {
+  font-size: 20px;
+  padding-bottom: 7px;
+}
+
+.reach h4 {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.reachrow {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.reachcol {
+  text-align: start;
+  width: 20%;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 40px;
+  padding: 40px 40px;
+  margin: 20px 0px;
+  color: white;
+  text-align: center;
+}
+
+.reachsmlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 4px;
+  gap: 20px;
+}
+
+.reachsmeachlist svg {
+  width: 37px;
+  height: 37px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.reachsmeachlist svg:hover {
+  scale: 1.25;
+  transition: 0.35s ease-in-out;
+}/*# sourceMappingURL=myindex.css.map */
