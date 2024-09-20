@@ -1,104 +1,101 @@
-
 /*------------------------------------------------ Products Part ---------------------------------------------*/
 @keyframes appear {
-    from {
-      opacity: 0;
-      transform: scale(0.5) translate(-100px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: scale(1) translate(0px);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.5) translate(-100px);
   }
-  
-  
-  .products {
-    background-color: black;
-    padding: 100px;
-    color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
-    animation: fadeleft 1s forwards ease-in-out;
-    background: linear-gradient(33deg, rgb(0, 0, 0) 5%, rgb(48, 48, 48) 100%);
+
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0px);
   }
-  
-  .prodcontainer {
-    padding-left: 40px;
-  }
-  
-  .prodcontainer h3 {
-    font-weight: 200;
-  }
-  
-  .products h1 {
-    font-family: "Onest", sans-serif !important;
-    padding-bottom: 5px;
-    font-size: 60px;
-    font-weight: 600;
-  }
-  
-  .prodraw {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  
-  .prodcol {
-    padding: 23px;
-    display: block;
-    box-sizing: border-box;
-    width: 20%;
-    margin: 50px 25px;
-    background: rgba(0, 0, 0, 0.35);
-    color: white;
-    border-radius: 10px;
-    transition: 1s;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 20%;
-  }
-  
-  .prodcol:hover {
+}
+
+
+.products {
+  background-color: black;
+  padding: 100px;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  animation: fadeleft 1s forwards ease-in-out;
+  background: linear-gradient(33deg, rgb(0, 0, 0) 5%, rgb(48, 48, 48) 100%);
+}
+
+.prodcontainer {
+  padding-left: 40px;
+}
+
+.prodcontainer h3 {
+  font-weight: 200;
+}
+
+.products h1 {
+  font-family: "Onest", sans-serif !important;
+  padding-bottom: 5px;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.prodraw {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.prodcol {
+  padding: 23px;
+  display: block;
+  box-sizing: border-box;
+  width: 20%;
+  margin: 50px 25px;
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+  border-radius: 10px;
+  transition: 1s;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+
+  &:hover {
     scale: 1.08;
     transition: 1.1s;
   }
-  
-  .prodcol img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .prodcol h2 {
-    font-family: "Onest", sans-serif !important;
-    padding: 10px 0px;
-    font-weight: 500;
-  }
-  
-  .prodcol h4 {
-    font-weight: 200;
-    font-size: 14px;
-  }
-  
-  .prodbutt {
-    display: flex;
-    padding-left: 41%;
-  }
-  
-  .products a {
-    font-family: "Onest", sans-serif !important;
-    box-sizing: border-box;
-    border-radius: 8px;
-    background-color: white;
-    padding: 10px 20px;
-    color: #08090A;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .products a:hover {
-    scale: 1.03;
-    box-shadow: 0px 0px 6px rgb(255, 255, 255);
-    transition: 0.4s ease-in-out;
-  }
-  
-  
+}
+
+.prodcol img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.prodcol h2 {
+  font-family: "Onest", sans-serif !important;
+  padding: 10px 0px;
+  font-weight: 500;
+}
+
+.prodcol h4 {
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.prodbutt {
+  display: flex;
+  padding-left: 41%;
+}
+
+.products a {
+  font-family: "Onest", sans-serif !important;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px 20px;
+  color: #08090A;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.products a:hover {
+  scale: 1.03;
+  box-shadow: 0px 0px 6px rgb(255, 255, 255);
+  transition: 0.4s ease-in-out;
+}
