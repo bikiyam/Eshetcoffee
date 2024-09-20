@@ -1,0 +1,213 @@
+/*=========================== Contact Us Page =============================*/
+/*------------------- Contact Container ------------------*/
+.backg img {
+  opacity: 100%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+}
+
+.contact {
+  padding: 100px 20px;
+  align-items: center;
+  background: black;
+}
+.contact .contacth2 {
+  text-align: center;
+  font-family: "Onest", sans-serif !important;
+  padding-top: 10px;
+  font-size: 50px;
+  color: white;
+}
+.contact .contacth3 {
+  text-align: center;
+  font-family: "Onest", sans-serif !important;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+.contact .contactfullcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+/*===================  Contact Image ===================*/
+.contact-img-container {
+  padding: 50px;
+  width: 26%;
+  background: linear-gradient(213deg, rgb(50, 50, 50) 5%, rgb(79, 79, 79) 100%);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.contact-img-container img {
+  width: 100%;
+  border-radius: 20px;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact-form-container {
+  width: 45%;
+  padding: 0px 40px;
+  background: #0d0d0d;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.contact-form-container h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  font-weight: 300;
+}
+.contact-form-container input {
+  width: 100%;
+  height: 30px;
+  font-weight: 500;
+  background: transparent;
+  color: black;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  border: solid 1px rgba(255, 255, 255, 0.437);
+}
+.contact-form-container textarea {
+  width: 100%;
+  height: 100px;
+  font-weight: 500;
+  background: transparent;
+  color: black;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/*== Contact Form ==*/
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px 30px 0px;
+}
+.contact-form h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: white;
+}
+.contact-form .mailandphone {
+  width: 100%;
+  display: flex;
+  gap: 35px;
+}
+.contact-form .mailandphone div {
+  width: 50%;
+}
+
+.submitbutt {
+  background: white;
+  color: black;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.submitbutt:hover {
+  scale: 1.03;
+  box-shadow: 0px 0px 10px rgba(11, 34, 186, 0.3137254902);
+  transition: 0.4s ease-in-out;
+}
+
+.contacthome {
+  padding: 100px;
+}
+.contacthome h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.contbutt {
+  background: black;
+  margin: 10px;
+  padding: 10px 10px;
+  font-weight: 600;
+  font-size: 15px;
+  width: 120px;
+  border-radius: 20px;
+  text-align: center;
+}
+.contbutt a {
+  color: white;
+  text-decoration: none;
+}
+.contbutt:hover {
+  background: #f6ff00;
+  transition: 1.4s;
+}
+
+.reachus {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.reach {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 50px;
+  color: black;
+}
+.reach h2 {
+  font-family: "Onest", sans-serif !important;
+  padding: 10px 0px;
+  font-size: 50px;
+  color: white;
+}
+.reach h3 {
+  font-size: 20px;
+  padding-bottom: 7px;
+}
+.reach h4 {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.reachrow {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.reachcol {
+  text-align: start;
+  width: 20%;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 40px;
+  padding: 40px 40px;
+  margin: 20px 0px;
+  color: white;
+  text-align: center;
+}
+
+.reachsmlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 4px;
+  gap: 20px;
+}
+
+.reachsmeachlist svg {
+  width: 37px;
+  height: 37px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.reachsmeachlist svg:hover {
+  scale: 1.25;
+  transition: 0.35s ease-in-out;
+}/*# sourceMappingURL=contactpage.css.map */
