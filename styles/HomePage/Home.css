@@ -18,12 +18,10 @@ body {
   background: black;
 }
 .pagesheader h3 {
-  font-family: "Onest", sans-serif !important;
   font-size: 15px;
   font-weight: 600;
 }
 .pagesheader h1 {
-  font-family: "Onest", sans-serif !important;
   font-size: 45px;
   font-weight: 900;
   padding-top: 10px;
