@@ -51,14 +51,14 @@ nav {
 }
 
 /*
-.logo {
-  margin: 13px 10px 0px -50px;
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-  float: left;
-  transition: 0s;
-}*/
+  .logo {
+    margin: 13px 10px 0px -50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    float: left;
+    transition: 0s;
+  }*/
 .head a {
   font-family: "Onest", sans-serif !important;
   list-style: none;
@@ -84,12 +84,15 @@ nav {
 /* ----------------------------------- Enhancements Parts ---------------*/
 .circlee {
   position: absolute;
-  top: 1090px;
+  height: 80px;
+  width: -50px;
+  top: 1030px;
   left: 155px;
   background: rgb(0, 0, 0);
   border-radius: 50%;
   padding: 150px;
   z-index: -20;
+  margin-left: 35px;
   filter: blur(50px);
 }
 
@@ -101,15 +104,14 @@ nav {
   top: 475px;
   left: 1435px;
   color: white;
-  height: 420px;
+  height: 500px;
   z-index: 20;
   animation: fadedown 6s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-
 .scrollicon h3 {
+  margin-left: 12px;
   transform: rotate(270deg);
 }
-
 .scrollicon svg {
   width: 80px;
   height: 80px;
@@ -127,12 +129,11 @@ nav {
   z-index: 20;
   animation: fadedown 6s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-
 .scrollicon1 h3 {
-  margin-left: 10px;
+  margin-left: -10px;
+  margin-bottom: 10px;
   transform: rotate(270deg);
 }
-
 .scrollicon1 svg {
   width: 80px;
   height: 80px;

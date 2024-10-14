@@ -67,20 +67,22 @@
     height: 30px;
     font-weight: 500;
     background: transparent;
-    color: black;
+    color: #ffffff;
     padding: 10px;
     border-radius: 12px;
     border: none;
     border: solid 1px rgba(255, 255, 255, 0.437);
+    outline: none;
   }
   textarea {
     width: 100%;
     height: 100px;
     font-weight: 500;
     background: transparent;
-    color: black;
+    color: white;
     padding: 10px;
     border-radius: 12px;
+    outline: none;
   }
 }
 

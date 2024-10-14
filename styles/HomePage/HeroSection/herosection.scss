@@ -8,6 +8,7 @@
   justify-content: start;
   align-items: center;
   gap: 100px;
+
   h1 {
     font-family: "Onest", sans-serif;
     font-size: 90px;
@@ -17,6 +18,7 @@
     animation: fadeleft 3.5s forwards cubic-bezier(0.16, 1, 0.3, 1);
     transition: transform 3s cubic-bezier(0.16, 1, 0.3, 1);
   }
+
   h3 {
     font-weight: 200;
     font-size: 17px;
@@ -31,10 +33,36 @@
   padding-left: 40px;
   margin-left: 0px;
   padding-bottom: 50px;
+
+  div {
+    display: flex;
+
+    .getinotuch {
+      font-size: 15px;
+      font-weight: 300;
+      color: white;
+      background: #00000000;
+      box-sizing: border-box;
+      border-radius: 8px;
+      margin-top: 0px;
+      padding: 8.5px 20px;
+      text-decoration: none;
+      animation: fadeleft 4s forwards cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+      &:hover {
+        transform: scale(1.05) !important;
+        background: rgb(14, 14, 14);
+        transition: 3s ease-in-out;
+      }
+    }
+  }
+
 }
 
 .headerimgcontainer {
   width: 31%;
+
   img {
     border-radius: 50px;
     border-top-left-radius: 50px;
@@ -46,28 +74,28 @@
 }
 
 .explore {
+  /*
   font-weight: 600;
   box-sizing: border-box;
   border-radius: 8px;
   background-color: white;
   margin-top: 0px;
   padding: 6px 20px;
+  padding-bottom: 20px !important;
   color: #08090a;
   text-decoration: none;
-  margin-right: 5px;
   animation: fadeleft 4s forwards cubic-bezier(0.16, 1, 0.3, 1);
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  &:hover {
-    box-shadow: 0 0 5px 0 rgb(206, 206, 206);
-    transition: 0.3s ease-out;
-  }
-}
 
-.getinotuch {
+  &:hover {
+    box-shadow: 0 0 5px 0 rgb(39, 39, 39);
+    transition: 0.3s ease-out;
+  }*/
+
   font-size: 15px;
   font-weight: 300;
-  color: white;
-  background: #00000000;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
   box-sizing: border-box;
   border-radius: 8px;
   margin-top: 0px;
@@ -75,9 +103,11 @@
   text-decoration: none;
   animation: fadeleft 4s forwards cubic-bezier(0.16, 1, 0.3, 1);
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
   &:hover {
-    background: #ffffff1e;
-    transition: 0.8s;
+    transform: scale(1.05) !important;
+    background: rgb(14, 14, 14);
+    transition: 3s ease-in-out;
   }
 }
 

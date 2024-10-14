@@ -6,6 +6,7 @@
   }
   .menuicon {
     display: block;
+    margin-left: auto;
   }
   /*------- Enhancements responsiveness -----------*/
   .circlee {

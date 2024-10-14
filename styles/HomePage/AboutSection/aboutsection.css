@@ -14,7 +14,8 @@
   padding: 50px 0px;
   width: 28%;
   height: 100%;
-  margin-top: 6%;
+  margin-top: 20px;
+  padding-left: 40px;
 }
 
 .about h1 {
@@ -49,7 +50,7 @@
 
 .about a:hover {
   /*  background: transparent;
-  color: black;*/
+    color: black;*/
   box-shadow: 0 0 10px 0 rgb(0, 0, 0);
   transition: 0.3s ease-in-out;
 }/*# sourceMappingURL=aboutsection.css.map */
